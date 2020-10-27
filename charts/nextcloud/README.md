@@ -58,6 +58,7 @@ The following table lists the configurable parameters of the nextcloud chart and
 | `ingress.annotations`                                        | An array of service annotations                         | `nil`                                       |
 | `ingress.labels`                                             | An array of service labels                              | `nil`                                       |
 | `ingress.tls`                                                | Ingress TLS configuration                               | `[]`                                        |
+| `ingress.hosts`                                              | Ingress hosts configuration                             | `[]`                                        |
 | `nextcloud.host`                                             | nextcloud host to create application URLs               | `nextcloud.kube.home`                       |
 | `nextcloud.username`                                         | User of the application                                 | `admin`                                     |
 | `nextcloud.password`                                         | Application password                                    | `changeme`                                  |
