@@ -7,6 +7,13 @@ image:
   pullPolicy: IfNotPresent
   # pullSecrets:
   #   - myRegistrKeySecretName
+  # If not set, defaults will come from the Docker image's ENTRYPOINT==command and COMMAND==args
+  # command: |
+  #   - /bin/bash
+  # args: |
+  #   - -c
+  #   - sed -i 's!exec "$@"!mkdir /start \&\& echo "Done" > /start/command\nexec "$@"!g'
+  #     /entrypoint.sh && cat /entrypoint.sh && /entrypoint.sh apache2-foreground
 
 nameOverride: ""
 fullnameOverride: ""
